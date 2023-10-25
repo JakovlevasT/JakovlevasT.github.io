@@ -1,152 +1,355 @@
-.main-nav,
-.logo {
-  display: none;
-}
-
-.btn {
-  background-color: #ed4933;
-  color: white;
-  font-size: 12px;
-  text-transform: uppercase;
-  border: 1px solid #ed4933;
-  padding: 0.8em 2em;
-  letter-spacing: 2.64px;
-  font-weight: 600;
-  border-radius: 3px;
-}
-.btn:active {
-  outline: 2px solid white;
-  background-color: #ec5642;
-}
-body {
-  /* kol devinam */
-  margin-bottom: 600px;
-  background-color: rgba(171, 171, 171, 0.6);
-}
-
-/* ========header============ */
-header {
-  color: white;
-  position: fixed;
-  z-index: 10;
-  top: 10px;
-  left: 10px;
-}
-.burger-menu-btn {
-  border: 1px solid rgba(171, 171, 171, 0.6);
-  background-color: rgba(171, 171, 171, 0.6);
-  font-size: 25px;
-  color: white;
-  padding: 0.3em 0.6em;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 h1 {
-  font-size: 18px;
-  text-transform: uppercase;
-  border-top: 3px solid white;
-  border-bottom: 2px solid white;
-  padding: 7px 18px;
-  align-self: center;
+  font-size: 15px;
 }
+.purp-span {
+  color: blue;
+}
+.nav-icons > i {
+  padding: 0 4px;
+  color: blue;
+}
+.mobile-none {
+  display: none;
+}
+/* headerio galas=========================== */
 .hero {
-  background: url(/img/banner.jpg) no-repeat center;
-  background-size: cover;
-  /* paralax scroll efektas */
-  background-attachment: fixed;
-  height: 420px;
-  max-width: 100%;
-  color: white;
+  background-color: #645cff;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  text-align: center;
-  padding-left: 44px;
-  padding-right: 44px;
-  position: relative;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  gap: 30px;
 }
-.hero > * {
-  z-index: 1;
-  position: relative;
-}
-.hero::before {
-  position: absolute;
-  content: '';
-  background-color: rgba(0, 0, 0, 0.3);
-  /* top: 0; */
-  /* left: 0; */
-  /* width: 100%; */
-  /* height: 100%; */
-  /* right: 0; */
-  /* bottom: 0; */
-  inset: 0;
-}
-.hero-text {
+.hero > h2 {
+  letter-spacing: 6px;
   text-transform: uppercase;
+  font-size: 30px;
 }
-.hero-text a {
-  text-decoration: underline;
+.hero > p {
+  text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .main-nav,
-  .logo {
+.hero-btn {
+  background-color: inherit;
+  border: none;
+  border: 1px solid #645cff;
+  color: white;
+  padding: 4px 8px;
+}
+/* ======abouyt us========== */
+article {
+  max-width: 90%;
+  margin-inline: auto;
+}
+.title {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 4px;
+}
+article > img {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+.explore-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+article > p {
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+.read-more-link {
+  text-transform: capitalize;
+  color: rgb(24, 73, 234);
+  padding-bottom: 50px;
+}
+/* services */
+.services {
+  text-align: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.sercives-card {
+  padding: 20px 10px;
+}
+.service-icon {
+  background-color: #645cff;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.card-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.card-para {
+  font-size: 12px;
+}
+/* tours========================== */
+.tours-card {
+  border-bottom: 1px solid rgb(205, 212, 215);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.img-card {
+  position: relative;
+}
+.inside-img {
+  position: absolute;
+  top: 10px;
+  background-color: #645cff;
+  padding: 3px 5px;
+  font-size: 12px;
+  border: none;
+}
+.img-title {
+  padding: 20px 20px 30px 20px;
+}
+.place-and-price {
+  display: flex;
+  justify-content: space-between;
+}
+.map {
+  color: #645cff;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.time-price {
+  line-height: 1;
+  font-size: 13px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+.all-tours {
+  color: #645cff;
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 20px 50px;
+}
+/* gallery===================== */
+.img-gallery-and-text {
+  background-color: #645cff;
+}
+/* ================cta=========== */
+.cta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cta-title {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 30px;
+  margin: 0;
+  font-weight: normal;
+  padding: 10px 10px;
+}
+.sign-up > p {
+  padding-bottom: 30px;
+  color: white;
+  padding-left: 20px;
+  font-size: 13px;
+  line-height: 1.1;
+}
+.sign-up {
+  max-width: 50%;
+}
+.input-and-btn {
+  background-color: white;
+  margin-right: 20px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-and-btn > input {
+  padding-left: 10px;
+  border: none;
+  width: 100%;
+}
+.form-btn {
+  border: none;
+  padding: 5px 10px;
+}
+/* footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px 50px 40px;
+}
+.foot-nav {
+  font-size: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.foot-nav > a {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.foot-icons {
+  text-align: center;
+  color: #645cff;
+  font-size: 12px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.foot-icons > .fa {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.footer-text {
+  font-size: 10px;
+  text-align: center;
+}
+/* MEDIA========================================================================================================= */
+@media screen and (min-width: 789px) {
+  article,
+  .services,
+  .section-tours {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  nav,
+  .hero,
+  .our-gallery,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav {
+    justify-content: space-around;
+  }
+  .mobile-none {
     display: block;
   }
-  .burger-menu-btn {
-    display: none;
-  }
-  header {
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 28px 34px;
-  }
-  .nav-list {
-    display: flex;
-    align-items: center;
-  }
-  .nav-list > li {
+  .hero {
+    background: #4f5cd6ed url(/img/main.jpg) no-repeat center;
     position: relative;
   }
-  .nav-link {
-    padding: 0.5em 1em;
-    font-size: 18px;
-  }
-  .sub-menu {
-    /* display: none; */
-    top: -500px;
-    transition: top 0.3s;
-  }
-  .sub-menu {
-    background-color: white;
-    color: #222;
+  .hero::before {
     position: absolute;
-    min-width: 120px;
-    /* top: calc(100% + 25px); */
+    inset: 0;
+    content: '';
+    background: linear-gradient(#645cffa0, #645cff54);
   }
-  .sub-link {
-    padding: 0.4em 0.8em;
-    display: block;
-    border-bottom: 1px solid grey;
+  .hero > * {
+    z-index: 1;
+    position: relative;
   }
-  .has-children:hover + .sub-menu {
-    display: block;
+  .hero h2 {
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 6px;
+  }
+  .br-title {
+    display: none;
+  }
+  .hero > p {
+    text-align: center;
+    font-size: 12px;
+    max-width: 500px;
+  }
+  /* about us */
+
+  .about-us-box {
     display: flex;
-    flex-direction: column;
-    top: calc(100% + 25px);
+    justify-content: space-between;
+    gap: 20px;
   }
-  .has-children:hover::before {
-    transform: rotate(-180deg);
+  .img-box {
+    width: 50%;
+    height: 193px;
+    border: 5px solid #645cff;
+    position: relative;
   }
-  .has-children::before {
-    content: '\f078';
-    font-family: FontAwesome;
-    font-size: 14px;
-    margin-right: 8px;
-    display: inline-block;
-    vertical-align: inherit;
-    transition: 0.4s;
+  .box-img {
+    content: '';
+    position: relative;
+    left: 15px;
+    top: 15px;
+  }
+  .about-text-aside {
+    max-width: 50%;
+    margin-left: 30px;
+    padding-top: 50px;
+  }
+  .explore-title {
+    font-weight: 600;
+  }
+  .about-text-aside > p {
+    padding-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  /* services ========================== */
+  .services > .title {
+    margin-top: 100px;
+  }
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sercives-card {
+    display: flex;
+    gap: 5px;
+  }
+  .card__logo {
+    grid-row: span 2;
+  }
+  .card__title {
+    text-align: left;
+    padding-left: 5px;
+  }
+  /* section tours */
+  .tours-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .inside-img {
+    font-size: 8px;
+  }
+  .map {
+    font-size: 10px;
+  }
+  .time-price {
+    font-size: 10px;
+  }
+  .grid-galery {
+    height: 153px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+  }
+  /* cta */
+  .cta {
+    justify-content: space-between;
+  }
+  .input-and-btn {
+    width: 350px;
+    padding: 5px;
   }
 }
